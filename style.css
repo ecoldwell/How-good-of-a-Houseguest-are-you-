@@ -1,0 +1,180 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+h2 {
+	color:black;
+
+}
+
+
+html {
+	font-size: 62.5%;
+}
+
+.wrapper {
+	max-width:1280px;
+
+}
+
+header {
+	width:60%;
+	text-align: center;
+	margin:0 auto;
+}
+header h1 {
+	text-transform:uppercase;
+	font-size: 6rem;
+	font-weight:lighter;
+	letter-spacing:0.05em;
+	padding:3%;
+	line-height:1.3em;
+	
+}
+body {
+	text-align: center;
+	border:none;
+	font-family: Helvetica;
+	font-weight: lighter;
+	letter-spacing:0.05em;
+	font-size: 2.6rem;
+	background: linear-gradient(71deg, #0ae3ab, #32e30a, #0a2be3, #e30ad1, #e3920a, #e30a0a, #650ae3, #d7f102);
+	background-size: 1600% 1600%;
+	animation: AnimationName 80s ease infinite;
+	color: #FFFAFA;
+	text-shadow: 3px 3px 6px rgb(184, 190, 199);
+
+}
+
+p {
+	text-transform:uppercase;
+	line-height:1.3em;
+
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+
+section {
+	width:80%;
+	margin:0 auto;
+}
+
+form {
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+}
+
+fieldset {
+	border: none;
+/*	padding:3%;*/
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+}
+fieldset label {
+/*	padding-left: 3%;*/
+	padding:30px
+	font-size:2.1rem;
+}
+.submit {
+	width:100%;
+	padding:2%;
+	margin-top:2%;
+}
+
+input[type=submit] {
+	width:150px;
+	padding:20px;
+	border-radius: 10px;
+	background:rgba(255, 255, 255, 0.3);
+	color: #FFFAFA;
+	border:none;
+	text-align: center;
+	text-transform:uppercase;
+
+}
+input[type=radio] {
+	margin: 0 auto;
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+input[type=submit]:focus {
+	border-radius: 10px;
+}
+.choice {
+	font-size: 60px;
+	text-align: center;
+	margin: 50px 0;
+	color:#FFFAFA;
+	text-shadow:;
+}
+
+@media (max-width: 675px) {
+	header {
+		width:100%;
+	}
+
+	header h1 {
+		text-align:center;
+		font-size: 5.5rem;
+	}
+
+	.choice {
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 513px) {
+	header h1 {
+		font-size: 5rem;
+	}
+
+	.choice {
+		font-size: 5rem;
+	}
+
+
+}
+
+@media (max-width: 440px) {
+	header h1 {
+		font-size: 4rem;
+	}
+
+	.choice {
+		font-size:4rem;
+	}
+}
+
+@media (max-width: 350px) {
+	header h1 {
+		font-size: 3.5rem;
+	}
+
+	.choice {
+		font-size: 3.5rem;
+	}
+
+	body {
+		font-size:2rem;
+	}
+
+
+}
+
+
+
+
+
